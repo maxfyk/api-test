@@ -1,0 +1,224 @@
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 37, in <module>
+    resp = r.post('http://localhost:8000/coji-code/create', json=in_data)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 43, in <module>
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 43, in <module>
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python
+Python 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Failed calling sys.__interactivehook__
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site.py", line 449, in register_readline
+    readline.read_history_file(history)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 165, in read_history_file
+    self.mode._history.read_history_file(filename)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\pyreadline\lineeditor\history.py", line 82, in read_history_file
+    for line in open(filename, 'r'):
+  File "C:\Users\maxfyk\anaconda3\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8f in position 15: character maps to <undefined>
+>>> a = {'bsc': {'id':1, 'name': 'sdas'}}
+>>> a[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> a.keys(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: dict.keys() takes no arguments (1 given)
+>>> a.keys()[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'dict_keys' object is not subscriptable
+>>> a.keys()
+dict_keys(['bsc'])
+>>> _, v = a.popitem()
+>>> c
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> v
+{'id': 1, 'name': 'sdas'}
+>>>
+KeyboardInterrupt
+>>>
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 38, in <module>
+    img = base64.b64decode(resp.json()['image'])
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 43, in <module>
+    img = base64.b64decode(resp.json()['image'])
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> знерщт
+знерщт : The term 'знерщт' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ знерщт
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (знерщт:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python
+Python 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Failed calling sys.__interactivehook__
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site.py", line 449, in register_readline
+    readline.read_history_file(history)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 165, in read_history_file
+    self.mode._history.read_history_file(filename)
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\pyreadline\lineeditor\history.py", line 82, in read_history_file
+    for line in open(filename, 'r'):
+  File "C:\Users\maxfyk\anaconda3\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8f in position 15: character maps to <undefined>
+>>> a = {'bsc': {'id':1, 'name': 'sdas'}}
+>>> a.values()
+dict_values([{'id': 1, 'name': 'sdas'}])
+>>> a.items()
+dict_items([('bsc', {'id': 1, 'name': 'sdas'})])
+>>> c
+KeyboardInterrupt
+>>>
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 38, in <module>
+    img = base64.b64decode(resp.json()['image'])
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 38, in <module>
+    img = base64.b64decode(resp.json()['image'])
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\Documents\coji\api-test\coji-create.py", line 38, in <module>
+    img = base64.b64decode(resp.json()['image'])
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+(base) PS C:\Users\maxfyk\Documents\coji\api-test> python coji-create.py
+Traceback (most recent call last):
+  File "C:\Users\maxfyk\anaconda3\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\maxfyk\anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maxfyk\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
