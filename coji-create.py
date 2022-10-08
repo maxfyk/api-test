@@ -33,12 +33,13 @@ in_data_small = {
     'user-id': 'asdasd222'
 }
 
-resp = r.post('http://localhost:8000/coji-code/create', json=in_data)
+resp = r.post('http://138.2.132.121/coji-code/create', json=in_data)
+print(resp.json())
 img = base64.b64decode(resp.json()['image'])
 img = Image.open(io.BytesIO(img))
 img.save('out.jpg', quality=100)
-
-resp = r.post('http://localhost:8000/coji-code/create', json=in_data_small)
-img = base64.b64decode(resp.json()['image'])
-img = Image.open(io.BytesIO(img))
-img.save('out_small.jpg', quality=100)
+#
+# resp = r.post('http://localhost:8000/coji-code/create', json=in_data_small)
+# img = base64.b64decode(resp.json()['image'])
+# img = Image.open(io.BytesIO(img))
+# img.save('out_small.jpg', quality=100)
